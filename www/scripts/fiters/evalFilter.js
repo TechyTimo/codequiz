@@ -5,6 +5,9 @@ angular.module("codeQuiz")
         input = input.replace('if(', '').replace(')', '');
         input = 'new Boolean(' + input + ')';
       }
+      else if (typeof(input) == "object") {
+      	return input[1];
+      }
       return (input)?eval(input).toString():'undefined';
     };
   });

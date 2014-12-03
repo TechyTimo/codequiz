@@ -49,7 +49,19 @@ angular.module("codeQuiz")
           'null == undefined', // returns true
           'null == false', // returns false
           'NaN == NaN' // returns false
-        ]}
+        ]
+      },
+      swahili: {
+        description: 'Just a few questions on Kiswahili. Just Answer with <em>true</em> or <em>false</em>.',
+        tasks: [
+          ['Chai = Tea', true],
+          ['Coffee = Kahawa', true],
+          ['Cat = Paka', true], 
+          ['Mbwa = Cow', false], 
+          ['Kiti = Door', false], 
+          ['true = true', true]
+        ]
+      }
     };
 
     return {
